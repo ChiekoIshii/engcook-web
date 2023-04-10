@@ -73,6 +73,8 @@ description
     width: 100%;
     text-align: center;
     padding-top: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 .description-title {
@@ -95,20 +97,33 @@ about
 -----*/
 .about-wrap {
     display: flex;
+    height: auto;
     justify-content: center;
-    margin-top: 40px;
+    margin: 40px 0 60px 0;
 }
 
-.about-detail-wrap {
+.about-inner-wrap {
     width: 80%;
+    max-width: 1300px;
+    height: auto;
     background-color: pink;
+    display: flex;
+    flex-flow: column;
+}
+
+.about-detail-wrap,
+.about-detail-second-wrap {
+    width: 100%;
+    height: auto;
     position: relative;
+    margin-bottom: 100px;
+    background-color: blue;
 }
 
 .about-text-wrap {
     position: absolute;
     top: 120px;
-    right: 50px;
+    right: 0px;
     z-index: 100;
     width: 600px;
     padding: 60px;
@@ -117,8 +132,25 @@ about
     border-radius: 8px;
 }
 
-.about-detail-img-wrap img {
-    width: 60%;
+.about-text-second-wrap {
+    position: absolute;
+    top: 160px;
+    z-index: 100;
+    width: 600px;
+    padding: 60px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-inner-wrap img {
+    width: 70%;
+}
+
+.about-detail-img-second-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .about-title {
@@ -136,4 +168,73 @@ about
 
 .about-text {
     line-height: 1.7;
+}
+
+/*-----
+ コース紹介 
+ -----*/
+.course-section {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.course-wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-title-wrap {
+    color: var(--bg-color);
+}
+
+.section-title-wrap h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.section-title-wrap p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course-button-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.course-button {
+    padding: 20px 0;
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 300;
+    text-align: center;
+}
+
+.selected-button {
+    border-bottom: solid 2px var(--bg-color);
+}
+
+.course-card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* .course-card {
+    height: 463px;
+    background-color: var(--bg-color);
+} */
+
+.course-card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.course-card-text-wrap {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    flex-grow: 1;
 }
