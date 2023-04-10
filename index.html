@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>ENGCOOK</title>
     <link href="destyle.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
-    <link rel="icon" href="img/favicon.jpg">
+    <link rel="icon" href="img/PC/favicon.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -73,8 +76,8 @@
         </section>
         <!-- コース紹介 -->
         <section class="course-section">
-            <div class="course-wrap">
-                <div class="section-title-wrap">
+            <div class="section-wrap">
+                <div class="section-title-wrap bg-color-font">
                     <h2>Our Course</h2>
                     <p>コース</p>
                 </div>
@@ -113,7 +116,34 @@
                 </div>
             </div>
         </section>
+        <!-- 写真 -->
+        <section class="studio-section">
+            <div class="section-wrap">
+                <div class="section-title-wrap">
+                    <h2>Studio</h2>
+                    <p class="main-color-font">スタジオ</p>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/PC/studio-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/PC/studio-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/PC/studio-3.jpg" alt=""></div>
+                    </div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>

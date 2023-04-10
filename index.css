@@ -14,6 +14,14 @@ body {
     width: 100%;
 }
 
+.main-color-font {
+    color: var(--main-color)
+}
+
+.bg-color-font {
+    color: var(--bg-color);
+}
+
 /*-----
   mv 
 -----*/
@@ -39,9 +47,6 @@ body {
     font-size: 28px;
 }
 
-.main-color-font {
-    color: var(--main-color)
-}
 
 .mv-trial-lesson-button {
     width: 370px;
@@ -178,13 +183,9 @@ about
     background-color: var(--main-color);
 }
 
-.course-wrap {
+.section-wrap {
     width: 70%;
     margin: 0 auto;
-}
-
-.section-title-wrap {
-    color: var(--bg-color);
 }
 
 .section-title-wrap h2 {
@@ -237,4 +238,38 @@ about
     padding: 20px;
 }
 
-.course-card-text-wrap p {}
+/*-----
+ studio 
+ -----*/
+.swiper {
+    margin-top: 40px;
+}
+
+.swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev .swiper-button-next {
+    width: 79px;
+    height: 79px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullets {
+    position: static;
+    margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--main-color);
+    height: 10px;
+    width: 10px;
+}
