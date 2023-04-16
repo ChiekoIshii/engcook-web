@@ -255,6 +255,7 @@ img {
 .section-wrap {
     width: 65%;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 .section-title-wrap h2 {
@@ -369,6 +370,10 @@ img {
     position: relative;
 }
 
+.price-section-wrap {
+    padding: 100px 0;
+}
+
 .price-card {
     text-align: center;
     padding: 40px 20px;
@@ -426,6 +431,8 @@ img {
 
 .faq-title-wrap {
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .f-or-q {
@@ -435,6 +442,12 @@ img {
     font-weight: bold;
     float: left;
     padding-right: 20px;
+}
+
+.faq-icon-wrap.close {
+    color: aqua;
+    transform: rotate(360deg);
+    transition: transform 2s;
 }
 
 .question-text {
