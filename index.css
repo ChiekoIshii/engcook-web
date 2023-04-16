@@ -23,6 +23,44 @@ body {
 }
 
 /*-----
+ header 
+------*/
+header {
+    display: flex;
+    position: fixed;
+    z-index: 300;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+.header-logo-wrap {
+    line-height: 1;
+}
+
+.header-button {
+    display: none;
+    font-size: 12px;
+    padding: 12px 15px 10px 15px;
+    ;
+    border-radius: 9999px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.header--active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 5%);
+}
+
+.header--active .header-button {
+    display: block;
+}
+
+/*-----
   mv 
 -----*/
 .mv-wrap {
@@ -425,7 +463,6 @@ footer {
     background-color: var(--sub-color);
     color: var(--bg-color);
     font-size: 30px;
-    position: relative;
 }
 
 footer p {
@@ -434,15 +471,20 @@ footer p {
 }
 
 .up-button {
+    display: none;
     width: 80px;
     height: 80px;
     border-radius: 100%;
     background-color: var(--bg-color);
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
     color: var(--sub-color);
     text-align: center;
+}
+
+.up-button--active {
+    display: block;
 }
 
 .page-top__icon {
