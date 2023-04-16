@@ -22,6 +22,33 @@ body {
     color: var(--bg-color);
 }
 
+/*--------------------------------
+ スクロールエフェクト
+---------------------------------*/
+.fadeUpEffect {
+    opacity: 0;
+}
+
+.fadeUp {
+    opacity: 0;
+    animation-name: fadeUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /*-----
  header 
 ------*/
@@ -240,6 +267,14 @@ img {
     font-weight: bold;
 }
 
+.course-contents {
+    display: none;
+}
+
+.show-contents {
+    display: block;
+}
+
 .course-button-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,7 +289,7 @@ img {
     text-align: center;
 }
 
-.selected-button {
+.course-button--active {
     border-bottom: solid 2px var(--bg-color);
 }
 

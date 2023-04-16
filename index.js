@@ -9,6 +9,30 @@ $(function () {
         }
     });
 
+    //スクロールエフェクト
+    function fadeUpEffect() {
+        $('.fadeUpEffect').each(function () {
+            var elemPos = $(this).offset().top + 100;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll >= elemPos - windowHeight) {
+                $(this).addClass('fadeUp');
+            }
+        });
+    }
+    $(window).scroll(function () {
+        fadeUpEffect();
+    });
+
+    $tabs = $('.course-button');
+    $('.course-button').on('click', function () {
+        $('.course-button--active').removeClass('course-button--active');
+        $(this).addClass('course-button--active');
+        const index = $tabs.index(this);
+        $('.course-contents').removeClass('show-contents').eq(index).addClass('show-contents');
+    })
+
+
     // //====左に動くアニメーションここから===
     // $('.leftAnime').each(function () {
     //     var elemPos = $(this).offset().top - 50;
