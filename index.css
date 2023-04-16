@@ -146,10 +146,9 @@ about
 }
 
 .about-inner-wrap {
-    width: 65%;
+    width: 80%;
     max-width: 1300px;
     height: auto;
-    background-color: pink;
     display: flex;
     flex-flow: column;
 }
@@ -158,17 +157,17 @@ about
 .about-detail-second-wrap {
     width: 100%;
     height: auto;
-    position: relative;
+    min-height: 440px;
     margin-bottom: 100px;
-    background-color: blue;
+    position: relative;
 }
 
 .about-text-wrap {
     position: absolute;
-    top: 120px;
-    right: 0px;
+    bottom: -20px;
+    right: 0;
     z-index: 100;
-    width: 600px;
+    width: 555px;
     padding: 60px;
     background-color: var(--bg-color);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
@@ -177,23 +176,28 @@ about
 
 .about-text-second-wrap {
     position: absolute;
-    top: 160px;
+    height: auto;
+    bottom: -20px;
     z-index: 100;
-    width: 600px;
+    width: 555px;
     padding: 60px;
     background-color: var(--bg-color);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.about-inner-wrap img {
-    width: 70%;
+.about-detail-img-wrap {
+    width: 75%;
+}
+
+img {
+    width: 100%;
 }
 
 .about-detail-img-second-wrap {
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 75%;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .about-title {
