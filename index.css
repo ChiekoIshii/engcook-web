@@ -444,19 +444,13 @@ img {
     padding-right: 20px;
 }
 
-.faq-icon-wrap.close {
-    color: aqua;
-    transform: rotate(360deg);
-    transition: transform 2s;
-}
-
 .question-text {
     margin-left: 30px;
     padding-top: 3px;
 }
 
-.faq-title.close::after {
-    transform: rotate(-45deg);
+.material-icons-round.close {
+    transform: rotate(180deg);
 }
 
 .faq-hr {

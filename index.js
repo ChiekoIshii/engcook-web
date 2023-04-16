@@ -68,13 +68,15 @@ $(function () {
     $('.faq-title-wrap').on('click', function () {//タイトル要素をクリックしたら
         var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
         $(findElm).slideToggle();//アコーディオンの上下動作
+        var icon = $(this).find('span');
+        console.log(icon);
 
         if ($(this).hasClass('close')) {//タイトル要素にクラス名closeがあれば
             $(this).removeClass('close');//クラス名を除去し
-            $(this, '.faq-icon-wrap').removeClass('close');
+            $(icon).removeClass('close');
         } else {//それ以外は
             $(this).addClass('close');//クラス名closeを付与
-            $(this, '.faq-icon-wrap').addClass('close');//クラス名closeを付与
+            $(icon).addClass('close');//クラス名closeを付与
         }
     });
 
