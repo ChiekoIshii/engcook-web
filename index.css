@@ -661,7 +661,6 @@ about
         display: none;
         font-size: 12px;
         padding: 12px 15px 10px 15px;
-        ;
         border-radius: 9999px;
         background-color: var(--main-color);
         color: var(--bg-color);
@@ -812,7 +811,6 @@ about
 
     .about-title {
         font-size: 18px;
-        color: var(--main-color);
         margin-bottom: 20px;
     }
 
@@ -838,6 +836,70 @@ about
         font-size: 13px;
         border-radius: 9999px;
         margin: 0 auto 40px auto;
+    }
+
+    /*-----
+ コース紹介 
+ -----*/
+    .section-wrap {
+        width: 80%;
+        margin: 0 auto;
+        padding: 65px 0;
+    }
+
+    .section-title-wrap h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .section-title-wrap p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .show-contents {
+        display: block;
+    }
+
+    .course-button {
+        padding: 13px 0;
+        font-size: 16px;
+        color: var(--bg-color);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .course-button--active {
+        border-bottom: solid 2px var(--bg-color);
+    }
+
+    .course-card-wrap {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .card {
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .course-card {
+        margin-top: 15px;
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .course-card img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .course-card-text-wrap {
+        padding: 20px;
+        font-size: 14px;
     }
 
 }
