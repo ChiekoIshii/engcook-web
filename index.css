@@ -627,6 +627,7 @@ about
         bottom: 20px;
         color: var(--sub-color);
         text-align: center;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 5%);
     }
 
     .up-button--active {
